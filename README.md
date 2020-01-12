@@ -14,13 +14,9 @@ The implemented networks include:
 - A multi-output version of the Keras VGG19 network for deep features extraction used in the perceptual loss
 - A custom discriminator network based on the one described in [Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network](https://arxiv.org/abs/1609.04802) (SRGANS, Ledig et al. 2017)
 
-
 ## Pre-trained networks
 
 The weights used to produced these images are available under `sample_weights` (see [Additional Information](#additional-information)).
-
-<b>IMPORTANT</b>: the weights are stored on [git lfs](https://git-lfs.github.com/). To download them clone the repository and run `git lfs pull`; if getting quota issues, go here https://github.com/idealo/image-super-resolution/issues/59#issuecomment-526940275.
-
 
 ## Installation
 There are two ways to install the Image Super-Resolution package:
