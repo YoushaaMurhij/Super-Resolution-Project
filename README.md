@@ -16,54 +16,12 @@ The implemented networks include:
 - A multi-output version of the Keras VGG19 network for deep features extraction used in the perceptual loss
 - A custom discriminator network based on the one described in [Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network](https://arxiv.org/abs/1609.04802) (SRGANS, Ledig et al. 2017)
 
-Read the full documentation at: [https://idealo.github.io/image-super-resolution/](https://idealo.github.io/image-super-resolution/).
-
-[Docker scripts](https://idealo.github.io/image-super-resolution/tutorials/docker/) and [Google Colab notebooks](https://github.com/idealo/image-super-resolution/tree/master/notebooks) are available to carry training and prediction. Also, we provide scripts to facilitate training on the cloud with AWS and [nvidia-docker](https://github.com/NVIDIA/nvidia-docker) with only a few commands.
-
-ISR is compatible with Python 3.6 and is distributed under the Apache 2.0 license. We welcome any kind of contribution. If you wish to contribute, please see the [Contribute](#contribute) section.
-
-## Contents
-- [Pre-trained networks](#pre-trained-networks)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Additional Information](#additional-information)
-- [Contribute](#contribute)
-- [Citation](#citation)
-- [Maintainers](#maintainers)
-- [License](#copyright)
 
 ## Pre-trained networks
 
 The weights used to produced these images are available under `sample_weights` (see [Additional Information](#additional-information)).
 
 <b>IMPORTANT</b>: the weights are stored on [git lfs](https://git-lfs.github.com/). To download them clone the repository and run `git lfs pull`; if getting quota issues, go here https://github.com/idealo/image-super-resolution/issues/59#issuecomment-526940275.
-
-#### Basic model
-RRDN model, PSNR driven, weights [here](weights/sample_weights/rdn-C3-D10-G64-G064-x2/PSNR-driven/).
-
-|![butterfly-sample](figures/butterfly_comparison_SR_baseline.png)|
-|:--:|
-| Low resolution image (left), ISR output (center), bicubic scaling (right). Click to zoom. |
-#### GANS model
-RRDN model, trained with Adversarial and VGG features losses, weights [here](weights/sample_weights/rrdn-C4-D3-G32-G032-T10-x4/Perceptual/).
-
-|![baboon-comparison](figures/baboon-compare.png)|
-|:--:|
-| RRDN GANS model (left), bicubic upscaling (right). |
--> [more detailed comparison](http://www.framecompare.com/screenshotcomparison/PGZPNNNX)
-
-#### Artefact Cancelling GANS model
-RDN model, trained with Adversarial and VGG features losses, weights [here](weights/sample_weights/rdn-C6-D20-G64-G064-x2/ArtefactCancelling/).
-
-|![temple-comparison](figures/temple_comparison.png)|
-|:--:|
-| Standard vs GANS model. Click to zoom. |
-
-
-|![sandal-comparison](figures/sandal-compare.png)|
-|:--:|
-| RDN GANS artefact cancelling model (left), RDN standard PSNR driven model (right). |
--> [more detailed comparison](http://www.framecompare.com/screenshotcomparison/2ECCNNNU)
 
 
 ## Installation
@@ -75,8 +33,8 @@ pip install ISR
 ```
 - Install ISR from the GitHub source:
 ```
-git clone https://github.com/idealo/image-super-resolution
-cd image-super-resolution
+git clone https://github.com/YoushaaMurhij/Super-Resolution-Project
+cd Super-Resolution-Project
 git lfs pull
 python setup.py install
 ```
@@ -221,35 +179,7 @@ The main parameters of the architecture structure are:
 
 source: [ESRGAN: Enhanced Super-Resolution Generative Adversarial Networks](https://arxiv.org/abs/1809.00219)
 
-## Contribute
-We welcome all kinds of contributions, models trained on different datasets, new model architectures and/or hyperparameters combinations that improve the performance of the currently published model.
 
-Will publish the performances of new models in this repository.
-
-See the [Contribution](CONTRIBUTING.md) guide for more details.
-
-#### Bump version
-To bump up the version, use
-```
-bumpversion {part} setup.py
-```
-
-## Citation
-Please cite our work in your publications if it helps your research.
-
-```
-@misc{cardinale2018isr,
-  title={ISR},
-  author={Francesco Cardinale et al.},
-  year={2018},
-  howpublished={\url{https://github.com/idealo/image-super-resolution}},
-}
-```
-
-## Maintainers
-* Francesco Cardinale, github: [cfrancesco](https://github.com/cfrancesco)
-* Zubin John, github: [valiantone](https://github.com/valiantone)
-* Dat Tran, github: [datitran](https://github.com/datitran)
 
 ## Copyright
 
