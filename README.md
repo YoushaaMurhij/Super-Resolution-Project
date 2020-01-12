@@ -1,6 +1,4 @@
-# Image Super-Resolution (ISR)
-
-<img src="figures/butterfly.png">
+# Super-Resolution 
 
 [![Build Status](https://travis-ci.org/idealo/image-super-resolution.svg?branch=master)](https://travis-ci.org/idealo/image-super-resolution)
 [![License](https://img.shields.io/badge/License-Apache%202.0-orange.svg)](https://github.com/idealo/image-super-resolution/blob/master/LICENSE)
@@ -157,10 +155,7 @@ The main parameters of the architecture structure are:
 - G - number of feature maps of each convolutional layers inside the RDBs
 - G0 - number of feature maps for convolutions outside of RDBs and of each RBD output
 
-<img src="figures/RDN.png" width="600">
 <br>
-
-<img src="figures/RDB.png" width="600">
 
 source: [Residual Dense Network for Image Super-Resolution](https://arxiv.org/abs/1802.08797)
 
