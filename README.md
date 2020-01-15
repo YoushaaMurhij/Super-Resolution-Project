@@ -163,13 +163,9 @@ The main parameters of the architecture structure are:
 - G - number of feature maps of each convolutional layers inside the RDBs
 - G0 - number of feature maps for convolutions outside of RDBs and of each RBD output
 
-<img src="figures/RRDN.jpg" width="600">
 <br>
 
-<img src="figures/RRDB.png" width="600">
-
 source: [ESRGAN: Enhanced Super-Resolution Generative Adversarial Networks](https://arxiv.org/abs/1809.00219)
-
 
 
 ## Copyright
