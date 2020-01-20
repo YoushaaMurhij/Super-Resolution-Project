@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/idealo/image-super-resolution.svg?branch=master)](https://travis-ci.org/idealo/image-super-resolution)
 [![License](https://img.shields.io/badge/License-Apache%202.0-orange.svg)](https://github.com/idealo/image-super-resolution/blob/master/LICENSE)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/YoushaaMurhij/Super-Resolution-Project/master)
 
 The goal of this project is to upscale and improve the quality of low resolution images.
 
