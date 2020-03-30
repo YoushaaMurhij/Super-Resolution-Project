@@ -14,24 +14,16 @@ The implemented networks include:
 - A multi-output version of the Keras VGG19 network for deep features extraction used in the perceptual loss
 - A custom discriminator network based on the one described in [Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network](https://arxiv.org/abs/1609.04802) (SRGANS, Ledig et al. 2017)
 
-## Pre-trained networks
 
-The weights used to produced these images are available under `sample_weights` (see [Additional Information](#additional-information)).
 
 ## Installation
-There are two ways to install the Image Super-Resolution package:
+To install the Image Super-Resolution package:
 
-- Install ISR from PyPI (recommended):
+- Install ISR from PyPI:
 ```
 pip install ISR
 ```
-- Install ISR from the GitHub source:
-```
-git clone https://github.com/YoushaaMurhij/Super-Resolution-Project
-cd Super-Resolution-Project
-git lfs pull
-python setup.py install
-```
+
 
 ## Usage
 
