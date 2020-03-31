@@ -26,6 +26,7 @@ pip install ISR
 
 
 ## Usage
+All steps are included in the notebooks.
 
 ### Prediction
 
