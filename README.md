@@ -124,33 +124,7 @@ trainer.train(
 )
 ```
 
-### RDN Pre-trained weights
-The weights of the RDN network trained on the [DIV2K dataset](https://data.vision.ee.ethz.ch/cvl/DIV2K) are available in ```weights/sample_weights/rdn-C6-D20-G64-G064-x2/PSNR-driven/rdn-C6-D20-G64-G064-x2_PSNR_epoch086.hdf5```. <br>
-The model was trained using ```C=6, D=20, G=64, G0=64``` as parameters (see architecture for details) for 86 epochs of 1000 batches of 8 32x32 augmented patches taken from LR images.
 
-The artefact can cancelling weights obtained with a combination of different training sessions using different datasets and perceptual loss with VGG19 and GAN can be found at `weights/sample_weights/rdn-C6-D20-G64-G064-x2/ArtefactCancelling/rdn-C6-D20-G64-G064-x2_ArtefactCancelling_epoch219.hdf5`
-We recommend using these weights only when cancelling compression artefacts is a desirable effect.
-
-### RDN Network architecture
-The main parameters of the architecture structure are:
-- D - number of Residual Dense Blocks (RDB)
-- C - number of convolutional layers stacked inside a RDB
-- G - number of feature maps of each convolutional layers inside the RDBs
-- G0 - number of feature maps for convolutions outside of RDBs and of each RBD output
-
-<br>
-
-source: [Residual Dense Network for Image Super-Resolution](https://arxiv.org/abs/1802.08797)
-
-### RRDN Network architecture
-The main parameters of the architecture structure are:
-- T - number of Residual in Residual Dense Blocks (RRDB)
-- D - number of Residual Dense Blocks (RDB) insider each RRDB
-- C - number of convolutional layers stacked inside a RDB
-- G - number of feature maps of each convolutional layers inside the RDBs
-- G0 - number of feature maps for convolutions outside of RDBs and of each RBD output
-
-<br>
 
 source: [ESRGAN: Enhanced Super-Resolution Generative Adversarial Networks](https://arxiv.org/abs/1809.00219)
 
